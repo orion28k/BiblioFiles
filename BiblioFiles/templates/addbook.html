@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h2>Add Book</h2>
+
+    <!-- book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, file -->
+    <form action="{{ url_for('addbook') }}" method="post">
+
+        <input type="hidden" id="illustration" name="illustration" value="None">
+
+        <input type="hidden" id="book_id" name="book_id" value="0">
+        <!-- ID is length of database -->
+
+        Book Name:<br>
+        <input type="text" id="book_name" name="book_name" value="" required><br><br>
+
+        Author:<br>
+        <input type="text" id="author_name" name="author_name" value="" required><br><br>
+
+        Genre:
+        <select id="genre_name" name="genre_name">
+            <option value="actionadventure">Action/Adventure</option>
+            <option value="mystery">Mystery</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="romance">Romance</option>
+            <option value="scifi">Sci-Fi</option>
+            <option value="horror">Horror</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+        </select><br><br>
+
+        Published Year:
+        <input type="number" id="published_year" name="published_year" value="None"><br><br>
+
+        Page Count: <input type="number" id="page_count" name="page_count" value="" required><br><br>
+
+        Reading Level: <input type="number" id="reading_level" name="reading_level" min="1" max="10" step="1" required><br><br>
+
+        Rating: <input type="number" id="rating_number" name="rating_number" min="1" max="10" step="1" required><br><br>
+
+        Location: 
+        <select id="location" name="location">
+            <option value="notowned">Not Owned</option>
+            <option value="ownedphysical">Owned Physical</option>
+            <option value="owneddigital">Owned Digital</option>
+        </select><br><br>
+
+        Select a file if digital (.pdf): <input type="file" id="file" name="file" accept=".pdf"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

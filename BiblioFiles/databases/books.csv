@@ -1,0 +1,2 @@
+book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, file
+1,Name,Author,actionadventure,1999,100,,3,5,notowned,<_io.TextIOWrapper name='/Users/andred/Desktop/Computer Science/Class/Database Systems/Biblio Files/databases/books.csv' mode='r' encoding='UTF-8'>

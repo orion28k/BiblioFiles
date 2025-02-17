@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>BiblioFiles<br><span style="font-weight: normal;"><strong>CSCI-356</strong><br>Team: Andre Davis, Edward Phillips IV, Bradley Hester, Nykehi, Dominique</span></h3>
+        <a href="{{ url_for('addbook') }}">
+            <button>Add Book Form</button>
+        </a>
+    
+        <a href="{{ url_for('adduser') }}">
+            <button>Add User Form</button>
+        </a>
+    </div>
+</body>
+
+</html>
