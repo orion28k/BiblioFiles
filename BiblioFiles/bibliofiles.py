@@ -38,14 +38,7 @@ def addbook():
         reading_level = request.form.get('reading_level')
         rating_number = request.form.get('rating_number')
         location = request.form.get('location')
-        file = request.files.get('file')
-        file_path = None
-
-        # To upload files from form
-        if file and file.filename.endswith('.pdf'):
-            file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-            file.save(file_path)  # Save file to the upload 
-            print(f"{file} saved to {file_path}")
+        link = request.files.get('link')
 
         # Count row and assign ID
         with open(BOOK_CSV_FILE, 'r') as file:
@@ -56,7 +49,7 @@ def addbook():
 
             file.close()
         
-        row = [book_id, book_name, author_name,genre_name,published_year,page_count,illustration,reading_level,rating_number,location,file]
+        row = [book_id, book_name, author_name,genre_name,published_year,page_count,illustration,reading_level,rating_number,location,link]
 
         with open(BOOK_CSV_FILE, 'a') as file:
             # Pass this file object to csv.writer()

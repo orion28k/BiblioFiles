@@ -1,5 +1,7 @@
 This is the current database backend for BiblioFiles.
 
+REQUIRED LIB: Flask
+
 Contained is 3 databases (users.csv, books.csv, and ownership.csv):
     - Users organizes the curent created users
     - Books oranganizes the current registered (or imported) books
