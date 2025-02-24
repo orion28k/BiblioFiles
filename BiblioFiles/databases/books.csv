@@ -1,2 +1,89 @@
 book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, link
 1,Name,Author,actionadventure,1999,100,,3,5,notowned,<_io.TextIOWrapper name='/Users/andred/Desktop/Computer Science/Class/Database Systems/Biblio Files/databases/books.csv' mode='r' encoding='UTF-8'>
+2,Don Quixote,Miguel de Cervantas,fiction,1605,1553,,1,8,notowned,
+
+4, Alices adventures in wonderland,Lewis Caroll,actionadventure,1865,105,,1,8,notowned,
+
+6,Adventures of Huckleberry Finn,Mark Twain,actionadventure,1884,303,,1,8,notowned,
+
+8,Treasure Island,Robert Louis Stevenson,actionadventure,1883,142,,1,8,notowned,
+
+10,Pride and prejudice,Jane Austen,fiction,1813,538,,1,9,notowned,
+
+12,Wuthering Heights,Emily Bront,fiction,1847,192,,1,8,notowned,13,Jane Eyre,Charlotte Bront,actionadventure,1847,691,,1,8,notowned,
+
+14,Moby Dick,Herman Melville,actionadventure,1851,468,,1,7,notowned,
+
+16,The scarlet letter,Nathaniel Hawthorne,fiction,1850,348,,1,7,notowned,
+
+18,Gulliver's travels,Jonathan Swift,actionadventure,1726,383,,1,7,notowned,
+
+20,The pilgrim's progress,John Bunyan,fiction,1678,158,,1,8,notowned,
+
+22,A Christmas carol,Charles Dickens,fiction,1843,93,,1,9,notowned,
+
+24, Little women,Lousia May Alcott,fiction,1868,684,,1,8,notowned,
+
+26,The Hobbit, or, There and back again,J.R.R Tolkien,fantasy,1937,322,,1,9,notowned,
+
+28,Frankenstein, or, The modern Prometheus,Mary Shelley,horror,1818,345,,1,8,notowned,
+
+30,Oliver Twist,Charles Dickens,fiction,1838,374,,1,8,notowned,
+
+32,Crime and punishment,Fyodor Dostoevsky,fiction,1866,767,,1,9,notowned,
+
+34,Dracula,Bram Stoker,horror,1897,353,,1,8,notowned,
+
+36,The three musketeers,Alexander Dumas,fiction,1844,945,,1,8,notowned,
+
+38,Brave new world,Aldous Huxley,fiction,1932,176,,1,8,notowned,
+
+40,War and peace,Leo Tolstoy,romance,1867,2882,,1,8,notowned,
+
+42,To kill a mockingbird,Harper Lee,fiction,1960,285,,1,9,notowned,
+
+44,The Wizard of Oz,L. Frank Baum,actionadventure,1900,96,,1,8,notowned,
+
+46,Animal farm,George Orwell,fiction,1945,71,,1,8,notowned,
+
+48,The call of the wild,Jack London,actionadventure,1903,85,,1,8,notowned,
+
+50,20,000 leagues under the sea,Jules Verne,actionadventure,1870,331,,1,8,notowned,
+
+52,The wind in the willows,Kenneth Grahame,fiction,1908,324,,1,8,notowned,
+
+54,The picture of Dorian Gray,Oscar Wilde,fiction,1890,264,,1,9,notowned,
+
+56,The grapes of wrath,John Steinbeck,fiction,1939,313,,1,8,notowned,
+
+58,Tess of the d'Urbervilles,Thomas Hardy,fiction,1891,517,,1,8,notowned,
+
+60,Harry Potter and the Sorcerer's Stone,J.K Rowling,fantasy,1997,3923,,1,9,notowned,
+
+62,Ulysses,James Joyce,fiction,1920,1305,,1,8,notowned,
+
+64,The complete Sherlock Holmes,Arthur Conan Doyle,mystery,1892,988,,1,9,notowned,
+
+66,The Count of Monte Cristo,Alexander Dumas,actionadventure,1846,558,,1,9,notowned,
+
+68,The old man and the sea,Ernest Hemingway,fiction,1952,52,,1,8,notowned,
+
+70,The lion, the witch, and the wardrobe,C.S Lewis,fantasy,1950,106,,1,8,notowned,
+
+72,Hunchback of notre-dame,Victor Hugo,fiction,1831,460,,1,8,notowned,
+
+74,Pinocchio,Carlo Collodi,fiction,1882,128,,1,8,notowned, 
+
+76, Black Beauty,Anna Sewell,fiction,1877,161,,1,8,notowned,
+78,Peter Pan,J.M Barie,fantasy,1904,117,,1,8,notowned,
+80, Lord of the flies,William Golding,fiction,1954,251,,1,7,notowned,
+82,The catcher in the rye,J.D Salinger,fiction,1951,151,,1,8,notowned,
+84, Fahrenheit 451,Ray Bradbury,fiction,1953,163,,1,8,notowned,
+86, All quiet on the western front,Erich Maria Remarque,fiction,1928,280,,1,8,notowned,
+88, Gone with the wind,Margaret Mitchell,romance,1936,1984,,1,9,notowned,
+90, Of mice and men,John Steinbeck,fiction,1937,107,,1,8,notowned,
+92, A Connecticut Yankee in King Arthur's court,Mark Twain,fantasy,1889,590,,1,8,notowned,
+94,Nineteen eighty-four, George Orwell,fiction,1949,394,,1,8,notowned,
+96, The Da Vinci code,Dan Brown,fiction,2003,383,,1,8,notowned,
+98, For whom the bell tolls,Ernest Hemingway,fiction,1940,101,,1,8,notowned,
+100,Utopia,Thomas More,fiction,1516,193,,1,8,notowned,
