@@ -106,6 +106,10 @@ def adduser():
         return f"Hello {user_name} and welcome to Biblio Files"
     return render_template('adduser.html')
 
+@app.route('/userprofile', methods=['GET', 'POST'])
+def profile():
+    return render_template('userprofile.html')
+
 # Runs website on host IP
 if __name__ == "__main__":
     app.run()
