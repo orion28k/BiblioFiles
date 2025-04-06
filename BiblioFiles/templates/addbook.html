@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Book Form</title>
     <style>
 
     </style>
@@ -13,7 +13,7 @@
     <h2>Add Book</h2>
 
     <!-- book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, file -->
-    <form action="{{ url_for('addbook') }}" method="post">
+    <form action="{{ url_for('tobookdb') }}" method="POST">
 
         <input type="hidden" id="illustration" name="illustration" value="None">
 
