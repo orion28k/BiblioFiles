@@ -2,34 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Welcome to the BiblioFiles</title>
+    <link rel="stylesheet" href="misc/navbar.css">
     <style>
-        button {
-            background-color: #000000;
-            color: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            display: flex;
-            justify-content: center;
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('misc/images/library2.jpg') no-repeat top right fixed;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
         }
-        
+        .overlay-text {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+        .login-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .navbar {
+            margin-top: 20px;
+        }
+        .bgimg {
+            background-image: url('library.jpg');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents tiling */
+        }
     </style>
 </head>
-
 <body>
-    <div>
-        <h3>BiblioFiles<br><span style="font-weight: normal;"><strong>CSCI-356</strong><br>Team: Andre Davis, Edward Phillips IV, Bradley Hester, Nykehi, Dominique</span></h3>
-        <a href="{{ url_for('addbook') }}">
-            <button>Add Book Form</button>
+    <div class="login-bar">
+
+        <a href="login.html">
+            <button>Login</button>
         </a>
-    
-        <a href="{{ url_for('adduser') }}">
-            <button>Add User Form</button>
+        <a href= "adduser.html">
+            <button> Create an Account </button>
         </a>
+        
     </div>
+    
+    <h1 style="background-color:brown; text-align: center">Welcome to the Biblio Files</h1>
+    
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#Class Project.html">Home</a></li>
+            <li><a href="#Syllabus.html">Contact Information</a></li>
+            <li><a href="#ContactMe.html">Contact</a></li>
+            <li><a href="viewbooks.php">Library</a></li>
+            
+           
+        </ul>
+            <div class="rightNav">
+                <input type="text" name="search" id="search" placeholder="Search">
+                <button class="btn btn-sm">Search</button>
+            </div>
+    </nav>
 </body>
+<body> 
+    <div class="overlay-text">
+        <p>Welcome to the BiblioFiles, where knowledge meets curiosity. Feel free to explore and expand your horizons!</p>
+    </div>
+</body>  
+
+<nav class="navigation">
+    <ul class= "Guide">
+        <a href="home.html">
+            <button>Our Books</button>
+        </a>
+    </ul>
+</nav>
 
 </html>

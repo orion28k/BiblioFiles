@@ -13,21 +13,20 @@
     <h2>Add Book</h2>
 
     <!-- book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, file -->
-    <form action="{{ url_for('tobookdb') }}" method="POST">
+    <form action="tobookdb.php" method="POST">
 
         <input type="hidden" id="illustration" name="illustration" value="None">
 
-        <input type="hidden" id="book_id" name="book_id" value="0">
-        <!-- ID is length of database -->
+        <input type="hidden" id="id" name="id" value="0"> <!-- ID IS LENGTH OF DB -->
 
         Book Name:<br>
-        <input type="text" id="book_name" name="book_name" value="" required><br><br>
+        <input type="text" id="name" name="name" value="" required><br><br>
 
         Author:<br>
-        <input type="text" id="author_name" name="author_name" value="" required><br><br>
+        <input type="text" id="author" name="author" value="" required><br><br>
 
         Genre:
-        <select id="genre_name" name="genre_name">
+        <select id="genre" name="genre">
             <option value="actionadventure">Action/Adventure</option>
             <option value="mystery">Mystery</option>
             <option value="fantasy">Fantasy</option>
@@ -43,12 +42,10 @@
 
         Page Count: <input type="number" id="page_count" name="page_count" value="" required><br><br>
 
-        Reading Level: <input type="number" id="reading_level" name="reading_level" min="1" max="10" step="1" required><br><br>
-
-        Rating: <input type="number" id="rating_number" name="rating_number" min="1" max="10" step="1" required><br><br>
+        <input type="hidden" id="like" name="like"><br><br>
 
         Location: 
-        <select id="location" name="location">
+        <select id="link" name="link">
             <option value="notowned">Not Owned</option>
             <option value="ownedphysical">Owned Physical</option>
             <option value="owneddigital">Owned Digital</option>
