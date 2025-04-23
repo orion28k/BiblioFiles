@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book Form</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h2>Add Book</h2>
+
+    <!-- book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, file -->
+    <form action="tobookdb.php" method="POST">
+
+        <input type="hidden" id="illustration" name="illustration" value="None">
+
+        <input type="hidden" id="id" name="id" value="0"> <!-- ID IS LENGTH OF DB -->
+
+        Book Name:<br>
+        <input type="text" id="name" name="name" value="" required><br><br>
+
+        Author:<br>
+        <input type="text" id="author" name="author" value="" required><br><br>
+
+        Genre:
+        <select id="genre" name="genre">
+            <option value="actionadventure">Action/Adventure</option>
+            <option value="mystery">Mystery</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="romance">Romance</option>
+            <option value="scifi">Sci-Fi</option>
+            <option value="horror">Horror</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+        </select><br><br>
+
+        Published Year:
+        <input type="number" id="published_year" name="published_year" value="None"><br><br>
+
+        Page Count: <input type="number" id="page_count" name="page_count" value="" required><br><br>
+
+        <input type="hidden" id="like" name="like"><br><br>
+
+        Location: 
+        <select id="link" name="link">
+            <option value="notowned">Not Owned</option>
+            <option value="ownedphysical">Owned Physical</option>
+            <option value="owneddigital">Owned Digital</option>
+        </select><br><br>
+
+        Link to File: <input type="url" id="url" name="link"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

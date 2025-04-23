@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User Form</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h2>Create New User</h2>
+
+    <!-- user_id,user_name,email,password,rpassword,is_admin -->
+    <form action="{{ url_for('adduser') }}" method="post">
+        <input type="hidden" id="user_id" name="user_id" value="0">
+
+        Username: <input type="text" id="user_name" name="user_name" required><br><br>
+
+        Email: <input type="text" id="email" name="email"><br><br>
+
+        Enter Password: <input type="text" id="password" name="password" required><br><br>
+
+        <input type="hidden" id="is_admin" name="is_admin" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
