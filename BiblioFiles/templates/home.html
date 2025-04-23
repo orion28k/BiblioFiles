@@ -5,8 +5,6 @@
   <title>Welcome to the BiblioFiles</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="BibliFIles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
   <style>
@@ -39,6 +37,7 @@
       position: absolute;
       top: 45%;
       left: 10%;
+      padding: 0.5%;
       transform: translateY(-50%);
       width: auto;
       max-width: 500px;
@@ -53,6 +52,7 @@
       position: absolute;
       top: 68%;
       left: 10%;
+      padding: 0.50%;
       transform: translateY(-50%);
       width: auto;
       max-width: 500px;
@@ -63,7 +63,7 @@
       font-family: 'Rubik', sans-serif;
     }
 
-    .left-text-3 {
+    .text {
       position: absolute;
       top: 80%;
       left: 10%;
@@ -79,9 +79,8 @@
     .overlay-text {
       background: rgba(0, 0, 0, 0.6);
       padding: 2rem;
-      border-radius: 12px;
       position: absolute;
-      top: 50%;
+      top: 55%;
       left: 70%;
       transform: translate(-50%, -50%);
       width: 40%;
@@ -94,6 +93,13 @@
       position: absolute;
       top: 15px;
       right: 20px;
+      z-index: 1000;
+    }
+
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 10px;
       z-index: 1000;
     }
 
@@ -166,7 +172,11 @@
     <a href="userprofile.html" class="btn btn-outline-light">My Profile</a>
   </div>
 
-  <h1><img src="misc/images/logo.png" alt="BiblioFiles Logo" style="height: 4%; width: 4%; vertical-align: middle; margin-right: 10px;">  BiblioFiles</h1>
+  <div class="logo">
+    <img src="misc/images/logo.png" alt="BiblioFiles Logo" style="height: 30%; width: 30%; vertical-align: middle; margin-right: 10px;">
+  </div>
+
+  <h1>BiblioFiles</h1>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
     <ul class="nav-list">
@@ -184,12 +194,15 @@
     <p class="left-text-2">Feel free to <b>explore & expand</b> your horizons!</p>
   </div>
 
-  <div class="left-text-3">
-    <a href="viewbooks.php" class="btn btn-light text-dark">Start Now</a>
+  <div class="text">
+    
   </div>
 
   <div class="overlay-text">
     <img src="misc/images/logo.png" alt="BiblioFiles Logo" style="max-width: 100%; height: auto;">
+    <br>Manage your library from anywhere. Discover. Share. Explore.<br>
+    <a href="viewbooks.php" class="btn btn-light text-dark">Your Library</a>
+    <a href="viewbooks.php" class="btn btn-light text-dark">(if logged in) Try for Free!</a>
   </div>
 </body>
 </html>
