@@ -1,59 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Book Form</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Book</title>
 
-    </style>
+  <!-- Bootstrap & Font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      background-image: url('misc/images/library2.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: brown;
+    }
+
+    .footer {
+      background-color: brown;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .page-header {
+      background-color: brown;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .form-box {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-top: 3rem;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    label {
+      font-weight: bold;
+      color: #F3E7D3;
+    }
+
+    .form-control,
+    select {
+      background-color: #333;
+      color: white;
+      border: 1px solid #777;
+      border-radius: 5px;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-control::placeholder {
+      color: #aaa;
+    }
+
+    .form-control:focus,
+    select:focus {
+ 
+      border-color: #C2A85C;
+      box-shadow: none;
+    }
+
+    .btn-submit {
+      background-color: #7A2E2E;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .btn-submit:hover {
+      background-color: #5A1E27;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Add Book</h2>
 
-    <!-- book_id, book_name, author_name, genre_name, page_count, illustration, reading_level, rating_number, location, file -->
-    <form action="tobookdb.php" method="POST">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Gameing.html">
+        <img src="misc/images/logo.png" alt="Logo" width="50" class="rounded-pill" /> BiblioFiles
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="MyLibrary.html">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="userprofile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <input type="hidden" id="illustration" name="illustration" value="None">
+  <!-- Header -->
+  <div class="page-header">
+    <h1>Add Your Book</h1>
+  </div>
 
-        <input type="hidden" id="id" name="id" value="0"> <!-- ID IS LENGTH OF DB -->
+  <!-- Form Section -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="form-box">
+          <form action="tobookdb.php" method="POST">
+            <input type="hidden" id="illustration" name="illustration" value="None">
+            <input type="hidden" id="id" name="id" value="0">
 
-        Book Name:<br>
-        <input type="text" id="name" name="name" value="" required><br><br>
+            <label for="name">Book Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
 
-        Author:<br>
-        <input type="text" id="author" name="author" value="" required><br><br>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" class="form-control" required>
 
-        Genre:
-        <select id="genre" name="genre">
-            <option value="actionadventure">Action/Adventure</option>
-            <option value="mystery">Mystery</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="romance">Romance</option>
-            <option value="scifi">Sci-Fi</option>
-            <option value="horror">Horror</option>
-            <option value="fiction">Fiction</option>
-            <option value="nonfiction">Non-Fiction</option>
-        </select><br><br>
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre" class="form-control">
+              <option value="actionadventure">Action/Adventure</option>
+              <option value="mystery">Mystery</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="romance">Romance</option>
+              <option value="scifi">Sci-Fi</option>
+              <option value="horror">Horror</option>
+              <option value="fiction">Fiction</option>
+              <option value="nonfiction">Non-Fiction</option>
+            </select>
 
-        Published Year:
-        <input type="number" id="published_year" name="published_year" value="None"><br><br>
+            <label for="published_year">Published Year:</label>
+            <input type="number" id="published_year" name="published_year" class="form-control" value="None">
 
-        Page Count: <input type="number" id="page_count" name="page_count" value="" required><br><br>
+            <label for="page_count">Page Count:</label>
+            <input type="number" id="page_count" name="page_count" class="form-control" required>
 
-        <input type="hidden" id="like" name="like"><br><br>
+            <input type="hidden" id="like" name="like">
 
-        Location: 
-        <select id="link" name="link">
-            <option value="notowned">Not Owned</option>
-            <option value="ownedphysical">Owned Physical</option>
-            <option value="owneddigital">Owned Digital</option>
-        </select><br><br>
+            <label for="link">Location:</label>
+            <select id="link" name="link" class="form-control">
+              <option value="notowned">Not Owned</option>
+              <option value="ownedphysical">Owned Physical</option>
+              <option value="owneddigital">Owned Digital</option>
+            </select>
 
-        Link to File: <input type="url" id="url" name="link"><br><br>
+            <label for="url">Link to File:</label>
+            <input type="url" id="url" name="link" class="form-control">
 
-        <input type="submit" value="Submit">
-    </form>
+            <input type="submit" value="Submit" class="btn-submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 BiblioFiles. All rights reserved.</p>
+  </div>
+
 </body>
 </html>
+
